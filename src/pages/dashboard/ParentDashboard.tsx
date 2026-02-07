@@ -137,7 +137,7 @@ export default function ParentDashboard() {
 
   if (authLoading || loading) {
     return (
-      <Layout hideFooter>
+      <Layout hideFooter hideHeader={true}>
         <div className="min-h-screen flex items-center justify-center">
           <Loader2 className="h-8 w-8 animate-spin text-primary" />
         </div>
@@ -146,7 +146,7 @@ export default function ParentDashboard() {
   }
 
   return (
-    <Layout hideFooter>
+    <Layout hideFooter hideHeader={true}>
       <div className="min-h-screen bg-gradient-to-b from-accent/5 to-background">
         <div className="container mx-auto px-4 py-8">
           {/* Header */}
