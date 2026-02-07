@@ -130,7 +130,7 @@ export default function TeacherLearningResources() {
   };
 
   return (
-    <Layout hideFooter>
+    <Layout hideFooter hideHeader={true}>
       <div className="min-h-screen bg-muted/20">
         <div className="container mx-auto px-4 py-8">
           {/* Header */}
