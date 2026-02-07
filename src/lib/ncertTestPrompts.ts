@@ -352,7 +352,7 @@ export const dysgraphiaPrompts: Record<string, DysgraphiaPrompt[]> = {
     
     { type: "word", prompt: "Write: 'Hard work and discipline lead to success.'", reference: "Hard work and discipline lead to success.", difficulty: 3, gradeLevel: "9-10", dsm5Domain: "spelling" },
     
-    { type: "word", prompt: "Write: 'Science and innovation are important for national development.'", reference: "Science and innovation are important for national development.", difficulty: 3, gradeLevel: "9-10", dsm5Domain: "spelling" }
+    { type: "word", prompt: "Write: 'Science and innovation are important for national development.'", reference: "Science and innovation are important for national development.", difficulty: 3, gradeLevel: "9-10", dsm5Domain: "spelling" },
 
     // Visual-motor shapes
     { type: "shape", prompt: "Draw a circle", reference: "○", difficulty: 1, gradeLevel: "1-2", dsm5Domain: "visual-motor" },
