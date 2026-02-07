@@ -341,7 +341,7 @@ export default function TeacherDashboard() {
                   </div>
                   <div>
                     <p className="text-2xl font-bold">{students.length}</p>
-                    <p className="text-xs text-muted-foreground">Trees in Forest</p>
+                    <p className="text-xs text-muted-foreground">Children in Class</p>
                   </div>
                 </div>
               </CardContent>
