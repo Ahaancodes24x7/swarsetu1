@@ -33,98 +33,68 @@ export interface TestPromptsByLanguage {
 // ============================================
 const englishPrompts: TestPromptsByLanguage = {
   dyslexia: {
-    // DSM-5 Domain: Word reading accuracy
     words: [
-      // Grade 1-2: Basic CVC words, sight words
       { text: "cat, bat, sun, red, big, run, sit, hop", difficulty: 1, category: "word", gradeLevel: "1-2", dsm5Domain: "reading-accuracy" },
       { text: "ball, tree, milk, book, hand, fish, bird, girl", difficulty: 1, category: "word", gradeLevel: "1-2", dsm5Domain: "reading-accuracy" },
       { text: "happy, mother, father, water, garden, sister", difficulty: 1, category: "word", gradeLevel: "1-2", dsm5Domain: "reading-accuracy" },
-      // Grade 3-4: Multi-syllable words from NCERT texts
       { text: "beautiful, elephant, butterfly, umbrella, vegetable", difficulty: 2, category: "word", gradeLevel: "3-4", dsm5Domain: "reading-accuracy" },
       { text: "mountain, festival, celebrate, tomorrow, hospital", difficulty: 2, category: "word", gradeLevel: "3-4", dsm5Domain: "reading-accuracy" },
       { text: "important, different, wonderful, dangerous, interesting", difficulty: 2, category: "word", gradeLevel: "3-4", dsm5Domain: "reading-accuracy" },
-      // Grade 5-6: Complex words testing phonological awareness
       { text: "responsibility, environment, communication, technology", difficulty: 3, category: "word", gradeLevel: "5-6", dsm5Domain: "reading-accuracy" },
       { text: "independence, constitution, democracy, civilization", difficulty: 3, category: "word", gradeLevel: "5-6", dsm5Domain: "reading-accuracy" },
-      // Grade 7-8: Advanced vocabulary
       { text: "photosynthesis, biodiversity, ecosystem, atmosphere", difficulty: 3, category: "word", gradeLevel: "7-8", dsm5Domain: "reading-accuracy" },
       { text: "parliamentary, infrastructure, archaeological, chronological", difficulty: 3, category: "word", gradeLevel: "7-8", dsm5Domain: "reading-accuracy" },
     ],
-    // DSM-5 Domain: Reading rate/fluency
     sentences: [
-      // Grade 1-2: Simple subject-verb sentences from NCERT
       { text: "The cat sat on the mat.", difficulty: 1, category: "sentence", gradeLevel: "1-2", dsm5Domain: "reading-fluency" },
       { text: "I go to school every day.", difficulty: 1, category: "sentence", gradeLevel: "1-2", dsm5Domain: "reading-fluency" },
       { text: "My mother makes tasty food.", difficulty: 1, category: "sentence", gradeLevel: "1-2", dsm5Domain: "reading-fluency" },
       { text: "Birds fly in the blue sky.", difficulty: 1, category: "sentence", gradeLevel: "1-2", dsm5Domain: "reading-fluency" },
-      // Grade 3-4: Compound sentences from NCERT English
       { text: "The farmer works hard in his green field every morning.", difficulty: 2, category: "sentence", gradeLevel: "3-4", dsm5Domain: "reading-fluency" },
       { text: "My grandmother tells us wonderful stories about her village.", difficulty: 2, category: "sentence", gradeLevel: "3-4", dsm5Domain: "reading-fluency" },
       { text: "We should drink clean water and eat healthy food.", difficulty: 2, category: "sentence", gradeLevel: "3-4", dsm5Domain: "reading-fluency" },
-      // Grade 5-6: Complex sentences
       { text: "The children celebrated the festival of lights with their families and friends.", difficulty: 3, category: "sentence", gradeLevel: "5-6", dsm5Domain: "reading-fluency" },
       { text: "India became independent on the fifteenth of August, nineteen forty-seven.", difficulty: 3, category: "sentence", gradeLevel: "5-6", dsm5Domain: "reading-fluency" },
-      // Grade 7-8: Advanced sentences
       { text: "The water cycle involves evaporation, condensation, and precipitation.", difficulty: 3, category: "sentence", gradeLevel: "7-8", dsm5Domain: "reading-fluency" },
     ],
-    // DSM-5 Domain: Reading comprehension context
     paragraphs: [
-      // Grade 1-2: 3-sentence simple paragraphs
       { text: "The sun rises in the east. Birds wake up and sing. Children go to school.", difficulty: 1, category: "paragraph", gradeLevel: "1-2", dsm5Domain: "reading-comprehension" },
       { text: "I have a pet dog. His name is Tommy. He likes to play with me.", difficulty: 1, category: "paragraph", gradeLevel: "1-2", dsm5Domain: "reading-comprehension" },
-      // Grade 3-4: 4-sentence paragraphs from NCERT themes
       { text: "India is my country. It has many states and languages. People celebrate different festivals together. Unity in diversity makes India special.", difficulty: 2, category: "paragraph", gradeLevel: "3-4", dsm5Domain: "reading-comprehension" },
       { text: "Plants need sunlight, water, and air to grow. They make their own food. We should plant more trees. Trees give us fresh oxygen.", difficulty: 2, category: "paragraph", gradeLevel: "3-4", dsm5Domain: "reading-comprehension" },
-      // Grade 5-6: Descriptive paragraphs
       { text: "Trees are very important for our environment. They give us oxygen to breathe and shade to rest. They also provide homes for birds and animals. We should plant more trees and take care of them.", difficulty: 3, category: "paragraph", gradeLevel: "5-6", dsm5Domain: "reading-comprehension" },
-      // Grade 7-8: Science/Social Studies content
       { text: "The Earth revolves around the Sun once every year. This movement causes the change of seasons. When the Northern Hemisphere tilts toward the Sun, it experiences summer. When it tilts away, winter arrives.", difficulty: 3, category: "paragraph", gradeLevel: "7-8", dsm5Domain: "reading-comprehension" },
     ],
   },
   dyscalculia: {
-    // DSM-5 Domain: Number sense
     numberReading: [
-      // Grade 1-2: Single digits and teens
       { text: "Read these numbers: 1, 5, 3, 8, 2, 9, 4, 7, 6, 10", difficulty: 1, category: "word", gradeLevel: "1-2", dsm5Domain: "number-sense" },
       { text: "Read these numbers: 11, 14, 16, 13, 18, 15, 12, 19, 17, 20", difficulty: 1, category: "word", gradeLevel: "1-2", dsm5Domain: "number-sense" },
-      // Grade 3-4: Two-digit numbers
       { text: "Read these numbers: 23, 47, 65, 89, 54, 31, 76, 92", difficulty: 2, category: "word", gradeLevel: "3-4", dsm5Domain: "number-sense" },
       { text: "Read these numbers: 105, 250, 399, 472, 618, 803", difficulty: 2, category: "word", gradeLevel: "3-4", dsm5Domain: "number-sense" },
-      // Grade 5-6: Larger numbers and decimals
       { text: "Read these numbers: 1,234  5,678  10,050  25,000", difficulty: 3, category: "word", gradeLevel: "5-6", dsm5Domain: "number-sense" },
       { text: "Read these numbers: 3.5, 12.75, 100.25, 0.5", difficulty: 3, category: "word", gradeLevel: "5-6", dsm5Domain: "number-sense" },
-      // Grade 7-8: Large numbers and fractions
       { text: "Read: one lakh twenty thousand, five crore thirty lakh", difficulty: 3, category: "word", gradeLevel: "7-8", dsm5Domain: "number-sense" },
     ],
-    // DSM-5 Domain: Calculation fluency
     numberSequence: [
-      // Grade 1-2: Basic counting
       { text: "Count from 1 to 20", difficulty: 1, category: "sentence", gradeLevel: "1-2", dsm5Domain: "calculation" },
       { text: "Count from 10 to 1 backwards", difficulty: 1, category: "sentence", gradeLevel: "1-2", dsm5Domain: "calculation" },
-      // Grade 3-4: Skip counting
       { text: "Count by 2s from 2 to 20: two, four, six...", difficulty: 2, category: "sentence", gradeLevel: "3-4", dsm5Domain: "calculation" },
       { text: "Count by 5s from 5 to 50: five, ten, fifteen...", difficulty: 2, category: "sentence", gradeLevel: "3-4", dsm5Domain: "calculation" },
       { text: "Count backwards from 50 to 40", difficulty: 2, category: "sentence", gradeLevel: "3-4", dsm5Domain: "calculation" },
-      // Grade 5-6: Multiplication tables
       { text: "Say the 7 times table: 7, 14, 21, 28...", difficulty: 3, category: "sentence", gradeLevel: "5-6", dsm5Domain: "calculation" },
       { text: "Count by 25s from 25 to 200", difficulty: 3, category: "sentence", gradeLevel: "5-6", dsm5Domain: "calculation" },
-      // Grade 7-8: Complex sequences
       { text: "What comes next: 2, 4, 8, 16, ?", difficulty: 3, category: "sentence", gradeLevel: "7-8", dsm5Domain: "calculation" },
     ],
-    // DSM-5 Domain: Mathematical reasoning
     wordProblems: [
-      // Grade 1-2: Single-step addition/subtraction
       { text: "You have 5 apples. Your friend gives you 3 more. How many apples do you have now?", difficulty: 1, category: "sentence", gradeLevel: "1-2", dsm5Domain: "math-reasoning" },
       { text: "There are 8 birds on a tree. 2 birds fly away. How many birds are left?", difficulty: 1, category: "sentence", gradeLevel: "1-2", dsm5Domain: "math-reasoning" },
       { text: "Rani has 4 pencils. Raj has 5 pencils. How many pencils do they have together?", difficulty: 1, category: "sentence", gradeLevel: "1-2", dsm5Domain: "math-reasoning" },
-      // Grade 3-4: Two-step problems
       { text: "A farmer has 24 mangoes. He gives 8 to his neighbor and 6 to his children. How many mangoes are left?", difficulty: 2, category: "sentence", gradeLevel: "3-4", dsm5Domain: "math-reasoning" },
       { text: "There are 5 rows of chairs with 6 chairs in each row. How many chairs are there in total?", difficulty: 2, category: "sentence", gradeLevel: "3-4", dsm5Domain: "math-reasoning" },
       { text: "A book costs 45 rupees. How much will 3 books cost?", difficulty: 2, category: "sentence", gradeLevel: "3-4", dsm5Domain: "math-reasoning" },
-      // Grade 5-6: Multi-step problems
       { text: "A shopkeeper sold 156 notebooks on Monday and 234 on Tuesday. He had 500 notebooks. How many are left?", difficulty: 3, category: "sentence", gradeLevel: "5-6", dsm5Domain: "math-reasoning" },
       { text: "A train travels at 60 kilometers per hour. How far will it travel in 3 hours?", difficulty: 3, category: "sentence", gradeLevel: "5-6", dsm5Domain: "math-reasoning" },
-      // Grade 7-8: Complex reasoning
       { text: "If 12 workers can build a wall in 8 days, how many days will 6 workers take?", difficulty: 3, category: "sentence", gradeLevel: "7-8", dsm5Domain: "math-reasoning" },
       { text: "The ratio of boys to girls in a class is 3:2. If there are 30 students, how many are girls?", difficulty: 3, category: "sentence", gradeLevel: "7-8", dsm5Domain: "math-reasoning" },
     ],
@@ -137,44 +107,32 @@ const englishPrompts: TestPromptsByLanguage = {
 const hindiPrompts: TestPromptsByLanguage = {
   dyslexia: {
     words: [
-      // Grade 1-2: Basic Hindi words (Rimjhim textbook)
       { text: "माँ, पानी, घर, फूल, पेड़, नाम, काम, बच्चा", difficulty: 1, category: "word", gradeLevel: "1-2", dsm5Domain: "reading-accuracy" },
       { text: "किताब, कमल, गमला, तितली, मछली, बिल्ली", difficulty: 1, category: "word", gradeLevel: "1-2", dsm5Domain: "reading-accuracy" },
-      // Grade 3-4: Two-syllable words
       { text: "सुंदर, बगीचा, आसमान, तितली, हाथी, चिड़िया", difficulty: 2, category: "word", gradeLevel: "3-4", dsm5Domain: "reading-accuracy" },
       { text: "त्योहार, दीपावली, रंगोली, मिठाई, खुशियाँ", difficulty: 2, category: "word", gradeLevel: "3-4", dsm5Domain: "reading-accuracy" },
-      // Grade 5-6: Complex words
       { text: "अध्यापक, पर्यावरण, स्वतंत्रता, परिवार, विद्यालय", difficulty: 3, category: "word", gradeLevel: "5-6", dsm5Domain: "reading-accuracy" },
       { text: "लोकतंत्र, संविधान, नागरिकता, जिम्मेदारी", difficulty: 3, category: "word", gradeLevel: "5-6", dsm5Domain: "reading-accuracy" },
-      // Grade 7-8: Advanced vocabulary
       { text: "प्रकाशसंश्लेषण, जैवविविधता, पारिस्थितिकी, वायुमंडल", difficulty: 3, category: "word", gradeLevel: "7-8", dsm5Domain: "reading-accuracy" },
     ],
     sentences: [
-      // Grade 1-2: Simple sentences
       { text: "राम स्कूल जाता है।", difficulty: 1, category: "sentence", gradeLevel: "1-2", dsm5Domain: "reading-fluency" },
       { text: "यह मेरा घर है।", difficulty: 1, category: "sentence", gradeLevel: "1-2", dsm5Domain: "reading-fluency" },
       { text: "माँ खाना बनाती है।", difficulty: 1, category: "sentence", gradeLevel: "1-2", dsm5Domain: "reading-fluency" },
       { text: "चिड़िया पेड़ पर बैठी है।", difficulty: 1, category: "sentence", gradeLevel: "1-2", dsm5Domain: "reading-fluency" },
-      // Grade 3-4: Compound sentences
       { text: "मेरी माँ बहुत अच्छा खाना बनाती हैं।", difficulty: 2, category: "sentence", gradeLevel: "3-4", dsm5Domain: "reading-fluency" },
       { text: "बच्चे बगीचे में खेल रहे हैं।", difficulty: 2, category: "sentence", gradeLevel: "3-4", dsm5Domain: "reading-fluency" },
       { text: "किसान खेत में फसल उगाता है।", difficulty: 2, category: "sentence", gradeLevel: "3-4", dsm5Domain: "reading-fluency" },
-      // Grade 5-6: Complex sentences
       { text: "हमारे देश में कई भाषाएँ बोली जाती हैं।", difficulty: 3, category: "sentence", gradeLevel: "5-6", dsm5Domain: "reading-fluency" },
       { text: "पंद्रह अगस्त उन्नीस सौ सैंतालीस को भारत स्वतंत्र हुआ।", difficulty: 3, category: "sentence", gradeLevel: "5-6", dsm5Domain: "reading-fluency" },
-      // Grade 7-8: Advanced sentences
       { text: "जल चक्र में वाष्पीकरण, संघनन और वर्षण शामिल हैं।", difficulty: 3, category: "sentence", gradeLevel: "7-8", dsm5Domain: "reading-fluency" },
     ],
     paragraphs: [
-      // Grade 1-2
       { text: "सूरज सुबह उगता है। पक्षी गाते हैं। बच्चे स्कूल जाते हैं।", difficulty: 1, category: "paragraph", gradeLevel: "1-2", dsm5Domain: "reading-comprehension" },
       { text: "मेरे पास एक कुत्ता है। उसका नाम टॉमी है। वह मेरे साथ खेलता है।", difficulty: 1, category: "paragraph", gradeLevel: "1-2", dsm5Domain: "reading-comprehension" },
-      // Grade 3-4
       { text: "भारत एक बड़ा देश है। यहाँ अनेक त्योहार मनाए जाते हैं। सभी मिलकर खुशियाँ बाँटते हैं। अनेकता में एकता भारत की पहचान है।", difficulty: 2, category: "paragraph", gradeLevel: "3-4", dsm5Domain: "reading-comprehension" },
       { text: "पौधों को बढ़ने के लिए धूप, पानी और हवा चाहिए। वे अपना भोजन खुद बनाते हैं। पेड़ हमें ताज़ी हवा देते हैं।", difficulty: 2, category: "paragraph", gradeLevel: "3-4", dsm5Domain: "reading-comprehension" },
-      // Grade 5-6
       { text: "पेड़ हमारे लिए बहुत महत्वपूर्ण हैं। वे हमें ऑक्सीजन देते हैं और छाया प्रदान करते हैं। वे पक्षियों और जानवरों का घर भी हैं। हमें अधिक पेड़ लगाने चाहिए।", difficulty: 3, category: "paragraph", gradeLevel: "5-6", dsm5Domain: "reading-comprehension" },
-      // Grade 7-8
       { text: "पृथ्वी सूर्य की परिक्रमा एक वर्ष में करती है। इस गति से ऋतुएँ बदलती हैं। जब उत्तरी गोलार्ध सूर्य की ओर झुकता है, तब गर्मी होती है। जब दूर होता है, तब सर्दी आती है।", difficulty: 3, category: "paragraph", gradeLevel: "7-8", dsm5Domain: "reading-comprehension" },
     ],
   },
@@ -191,7 +149,7 @@ const hindiPrompts: TestPromptsByLanguage = {
       { text: "एक से बीस तक गिनती करें", difficulty: 1, category: "sentence", gradeLevel: "1-2", dsm5Domain: "calculation" },
       { text: "दस से एक तक उल्टी गिनती करें", difficulty: 1, category: "sentence", gradeLevel: "1-2", dsm5Domain: "calculation" },
       { text: "दो-दो की गिनती: दो, चार, छह... बीस तक", difficulty: 2, category: "sentence", gradeLevel: "3-4", dsm5Domain: "calculation" },
-      { text: "पाँच-पाँच की गिनती: पाँच, दस, पंद्रह... पचास तक", difficulty: 2, category: "sentence", gradeLevel: "3-4", dsm5Domain: "calculation" },
+      { text: "पाँच-पाँच की गिनती: पाच, दस, पंद्रह... पचास तक", difficulty: 2, category: "sentence", gradeLevel: "3-4", dsm5Domain: "calculation" },
       { text: "सात का पहाड़ा बोलें: सात, चौदह, इक्कीस...", difficulty: 3, category: "sentence", gradeLevel: "5-6", dsm5Domain: "calculation" },
       { text: "अगला क्या आएगा: दो, चार, आठ, सोलह, ?", difficulty: 3, category: "sentence", gradeLevel: "7-8", dsm5Domain: "calculation" },
     ],
@@ -298,13 +256,12 @@ export const ncertPromptsByLanguage: Record<string, TestPromptsByLanguage> = {
   hi: hindiPrompts,
   bn: bengaliPrompts,
   ta: tamilPrompts,
-  // Fallback to English for other languages (can be expanded)
   te: englishPrompts,
-  mr: hindiPrompts, // Marathi similar to Hindi
-  gu: hindiPrompts, // Gujarati similar to Hindi structure
+  mr: hindiPrompts,
+  gu: hindiPrompts,
   kn: englishPrompts,
   ml: englishPrompts,
-  pa: hindiPrompts, // Punjabi similar to Hindi
+  pa: hindiPrompts,
   or: englishPrompts,
 };
 
@@ -322,52 +279,38 @@ export interface DysgraphiaPrompt {
 
 export const dysgraphiaPrompts: Record<string, DysgraphiaPrompt[]> = {
   en: [
-    // Grade 1-2: Letter formation
     { type: "letter", prompt: "Write the letter 'A'", reference: "A", difficulty: 1, gradeLevel: "1-2", dsm5Domain: "letter-formation" },
     { type: "letter", prompt: "Write the letter 'b'", reference: "b", difficulty: 1, gradeLevel: "1-2", dsm5Domain: "letter-formation" },
     { type: "letter", prompt: "Write the letter 'D'", reference: "D", difficulty: 1, gradeLevel: "1-2", dsm5Domain: "letter-formation" },
     { type: "letter", prompt: "Write the letter 'g'", reference: "g", difficulty: 1, gradeLevel: "1-2", dsm5Domain: "letter-formation" },
-    // Simple words
     { type: "word", prompt: "Write the word 'cat'", reference: "cat", difficulty: 1, gradeLevel: "1-2", dsm5Domain: "spelling" },
     { type: "word", prompt: "Write the word 'dog'", reference: "dog", difficulty: 1, gradeLevel: "1-2", dsm5Domain: "spelling" },
     { type: "word", prompt: "Write the word 'sun'", reference: "sun", difficulty: 1, gradeLevel: "1-2", dsm5Domain: "spelling" },
-    // Grade 3-4
     { type: "word", prompt: "Write the word 'happy'", reference: "happy", difficulty: 2, gradeLevel: "3-4", dsm5Domain: "spelling" },
     { type: "word", prompt: "Write the word 'school'", reference: "school", difficulty: 2, gradeLevel: "3-4", dsm5Domain: "spelling" },
     { type: "word", prompt: "Write the word 'friend'", reference: "friend", difficulty: 2, gradeLevel: "3-4", dsm5Domain: "spelling" },
-    // Grade 5-6
     { type: "word", prompt: "Write the word 'beautiful'", reference: "beautiful", difficulty: 3, gradeLevel: "5-6", dsm5Domain: "spelling" },
     { type: "word", prompt: "Write the word 'environment'", reference: "environment", difficulty: 3, gradeLevel: "5-6", dsm5Domain: "spelling" },
-    // Grade 7-8
     { type: "word", prompt: "Write the word 'parliamentary'", reference: "parliamentary", difficulty: 3, gradeLevel: "7-8", dsm5Domain: "spelling" },
     { type: "word", prompt: "Write the sentence: 'The water cycle involves evaporation and condensation.'", reference: "The water cycle involves evaporation and condensation.", difficulty: 3, gradeLevel: "7-8", dsm5Domain: "spelling" },
     { type: "word", prompt: "Write this sentence from dictation: 'Archaeological evidence suggests ancient civilizations were advanced.'", reference: "Archaeological evidence suggests ancient civilizations were advanced.", difficulty: 3, gradeLevel: "7-8", dsm5Domain: "spelling" },
-    // Grade 9-10: Complex writing tasks
-    // Grade 9-10: Writing tasks (balanced difficulty)
     { type: "word", prompt: "Write: 'Education helps us build a better future.'", reference: "Education helps us build a better future.", difficulty: 3, gradeLevel: "9-10", dsm5Domain: "spelling" },
-    
     { type: "word", prompt: "Write: 'Technology has changed the way we communicate.'", reference: "Technology has changed the way we communicate.", difficulty: 3, gradeLevel: "9-10", dsm5Domain: "spelling" },
     { type: "word", prompt: "Write: 'The environment must be protected for future generations.'", reference: "The environment must be protected for future generations.", difficulty: 3, gradeLevel: "9-10", dsm5Domain: "spelling" },
     { type: "word", prompt: "Write: 'Hard work and discipline lead to success.'", reference: "Hard work and discipline lead to success.", difficulty: 3, gradeLevel: "9-10", dsm5Domain: "spelling" },
     { type: "word", prompt: "Write: 'Science and innovation are important for national development.'", reference: "Science and innovation are important for national development.", difficulty: 3, gradeLevel: "9-10", dsm5Domain: "spelling" },
-
-    // Visual-motor shapes
     { type: "shape", prompt: "Draw a circle", reference: "○", difficulty: 1, gradeLevel: "1-2", dsm5Domain: "visual-motor" },
     { type: "shape", prompt: "Draw a triangle", reference: "△", difficulty: 1, gradeLevel: "1-2", dsm5Domain: "visual-motor" },
     { type: "shape", prompt: "Draw a square", reference: "□", difficulty: 1, gradeLevel: "1-2", dsm5Domain: "visual-motor" },
     { type: "shape", prompt: "Draw a rectangle", reference: "▭", difficulty: 2, gradeLevel: "3-4", dsm5Domain: "visual-motor" },
-    // Figures
     { type: "figure", prompt: "Draw a simple house", reference: "🏠", difficulty: 2, gradeLevel: "3-4", dsm5Domain: "visual-motor" },
     { type: "figure", prompt: "Draw a tree with branches", reference: "🌳", difficulty: 2, gradeLevel: "3-4", dsm5Domain: "visual-motor" },
     { type: "figure", prompt: "Copy this pattern: △□○△□○", reference: "△□○△□○", difficulty: 3, gradeLevel: "5-6", dsm5Domain: "visual-motor" },
-    // Grade 7-8 figures
     { type: "figure", prompt: "Draw a 3D cube", reference: "⬡", difficulty: 3, gradeLevel: "7-8", dsm5Domain: "visual-motor" },
     { type: "figure", prompt: "Draw a flowchart with 3 boxes connected by arrows", reference: "□→□→□", difficulty: 3, gradeLevel: "7-8", dsm5Domain: "visual-motor" },
-    // Grade 9-10 figures
     { type: "figure", prompt: "Draw a labeled diagram of a plant cell (nucleus, cell wall, chloroplast)", reference: "Cell diagram", difficulty: 3, gradeLevel: "9-10", dsm5Domain: "visual-motor" },
     { type: "figure", prompt: "Draw a geometric proof diagram: two parallel lines cut by a transversal", reference: "Parallel lines", difficulty: 3, gradeLevel: "9-10", dsm5Domain: "visual-motor" },
   ],
-};
   hi: [
     { type: "letter", prompt: "अक्षर 'अ' लिखें", reference: "अ", difficulty: 1, gradeLevel: "1-2", dsm5Domain: "letter-formation" },
     { type: "letter", prompt: "अक्षर 'क' लिखें", reference: "क", difficulty: 1, gradeLevel: "1-2", dsm5Domain: "letter-formation" },
@@ -389,7 +332,6 @@ export const dysgraphiaPrompts: Record<string, DysgraphiaPrompt[]> = {
 // UTILITY FUNCTIONS
 // ============================================
 
-// Get prompts for a specific language
 export function getNcertPrompts(languageCode: string): TestPromptsByLanguage {
   return ncertPromptsByLanguage[languageCode] || ncertPromptsByLanguage.en;
 }
@@ -399,12 +341,10 @@ export function getDysgraphiaPrompts(languageCode: string, gradeNum?: number): D
   
   if (gradeNum === undefined) return allPrompts;
   
-  // Filter by grade level
   const gradeLevel = gradeNum <= 2 ? '1-2' : gradeNum <= 4 ? '3-4' : gradeNum <= 6 ? '5-6' : gradeNum <= 8 ? '7-8' : '9-10';
   
   let filtered = allPrompts.filter(p => p.gradeLevel === gradeLevel);
   
-  // If not enough at this level, add from adjacent lower level
   if (filtered.length < 3) {
     const fallbackLevel = gradeNum <= 2 ? '1-2' : gradeNum <= 4 ? '3-4' : gradeNum <= 6 ? '3-4' : gradeNum <= 8 ? '5-6' : '7-8';
     const fallback = allPrompts.filter(p => p.gradeLevel === fallbackLevel && !filtered.includes(p));
@@ -414,7 +354,6 @@ export function getDysgraphiaPrompts(languageCode: string, gradeNum?: number): D
   return filtered;
 }
 
-// Get prompts filtered by difficulty level
 export function getPromptsByDifficulty(
   prompts: TestPrompt[],
   difficulty: 1 | 2 | 3
@@ -422,7 +361,6 @@ export function getPromptsByDifficulty(
   return prompts.filter(p => p.difficulty <= difficulty);
 }
 
-// Get prompts filtered by grade level
 export function getPromptsByGrade(
   prompts: TestPrompt[],
   grade: number
@@ -442,7 +380,6 @@ export function getPromptsByGrade(
   });
 }
 
-// Get difficulty based on grade
 export function getDifficultyForGrade(grade: number): 1 | 2 | 3 {
   if (grade <= 2) return 1;
   if (grade <= 4) return 2;
