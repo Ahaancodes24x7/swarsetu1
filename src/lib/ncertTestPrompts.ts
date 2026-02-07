@@ -347,11 +347,8 @@ export const dysgraphiaPrompts: Record<string, DysgraphiaPrompt[]> = {
     { type: "word", prompt: "Write: 'Education helps us build a better future.'", reference: "Education helps us build a better future.", difficulty: 3, gradeLevel: "9-10", dsm5Domain: "spelling" },
     
     { type: "word", prompt: "Write: 'Technology has changed the way we communicate.'", reference: "Technology has changed the way we communicate.", difficulty: 3, gradeLevel: "9-10", dsm5Domain: "spelling" },
-    
     { type: "word", prompt: "Write: 'The environment must be protected for future generations.'", reference: "The environment must be protected for future generations.", difficulty: 3, gradeLevel: "9-10", dsm5Domain: "spelling" },
-    
     { type: "word", prompt: "Write: 'Hard work and discipline lead to success.'", reference: "Hard work and discipline lead to success.", difficulty: 3, gradeLevel: "9-10", dsm5Domain: "spelling" },
-    
     { type: "word", prompt: "Write: 'Science and innovation are important for national development.'", reference: "Science and innovation are important for national development.", difficulty: 3, gradeLevel: "9-10", dsm5Domain: "spelling" },
 
     // Visual-motor shapes
@@ -370,6 +367,7 @@ export const dysgraphiaPrompts: Record<string, DysgraphiaPrompt[]> = {
     { type: "figure", prompt: "Draw a labeled diagram of a plant cell (nucleus, cell wall, chloroplast)", reference: "Cell diagram", difficulty: 3, gradeLevel: "9-10", dsm5Domain: "visual-motor" },
     { type: "figure", prompt: "Draw a geometric proof diagram: two parallel lines cut by a transversal", reference: "Parallel lines", difficulty: 3, gradeLevel: "9-10", dsm5Domain: "visual-motor" },
   ],
+};
   hi: [
     { type: "letter", prompt: "अक्षर 'अ' लिखें", reference: "अ", difficulty: 1, gradeLevel: "1-2", dsm5Domain: "letter-formation" },
     { type: "letter", prompt: "अक्षर 'क' लिखें", reference: "क", difficulty: 1, gradeLevel: "1-2", dsm5Domain: "letter-formation" },
