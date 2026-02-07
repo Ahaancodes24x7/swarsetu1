@@ -48,14 +48,15 @@ export default function Index() {
           <div className="mx-auto max-w-4xl text-center">
             <div className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary mb-6 animate-fade-in">
               <Sparkles className="h-4 w-4" />
-              AI-Powered Learning Disability Detection
+              DETECT - SUPPORT - INCLUDE
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-foreground mb-6 animate-fade-in" style={{ animationDelay: "0.1s" }}>
               Every Child Deserves to Be{" "}
               <span className="text-gradient">Understood</span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto animate-fade-in" style={{ animationDelay: "0.2s" }}>
-              SWARSETU is India's first voice-powered platform to flag early indicators of dyslexia, dyscalculia, and dysgraphia in 11 Indian languages.
+              SwarSetu helps schools identify learning differences early, understand how children think, and provide the right support through intelligent assessments and insights.
+
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in" style={{ animationDelay: "0.3s" }}>
               <Button asChild variant="hero" size="xl">
