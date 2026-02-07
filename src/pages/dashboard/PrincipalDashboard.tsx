@@ -102,7 +102,7 @@ export default function PrincipalDashboard() {
 
   if (authLoading) {
     return (
-      <Layout hideFooter>
+      <Layout hideFooter hideHeader={true}>
         <div className="min-h-screen flex items-center justify-center">
           <Loader2 className="h-8 w-8 animate-spin text-primary" />
         </div>
@@ -111,7 +111,7 @@ export default function PrincipalDashboard() {
   }
 
   return (
-    <Layout hideFooter>
+    <Layout hideFooter hideHeader={true}>
       <div className="min-h-screen bg-muted/20">
         <div className="container mx-auto px-4 py-8">
           {/* Header */}
