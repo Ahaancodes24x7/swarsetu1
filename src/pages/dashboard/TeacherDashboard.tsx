@@ -708,9 +708,9 @@ export default function TeacherDashboard() {
                   </CardContent>
                 </Card>
 
-                <Card className="border-2 border-info/30">
+                <Card className="border-2 border-info/50 bg-info/5">
                   <CardContent className="pt-8 pb-8">
-                    <div className="h-16 w-16 rounded-2xl gradient-cool flex items-center justify-center mx-auto mb-4">
+                    <div className="h-16 w-16 rounded-2xl bg-info/20 flex items-center justify-center mx-auto mb-4">
                       <Brain className="h-8 w-8 text-info-foreground" />
                     </div>
                     <h3 className="text-xl font-semibold text-center mb-2">Perception Test</h3>
@@ -719,7 +719,7 @@ export default function TeacherDashboard() {
                     </p>
                     <Dialog>
                       <DialogTrigger asChild>
-                        <Button className="w-full bg-info hover:bg-info/90">{t.startTest}</Button>
+                        <Button className="w-full bg-[#0ea5e9] hover:bg-[#0284c7] text-white shadow-md">
                       </DialogTrigger>
                       <DialogContent>
                         <DialogHeader>
