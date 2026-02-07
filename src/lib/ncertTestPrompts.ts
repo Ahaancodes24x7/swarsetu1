@@ -343,9 +343,17 @@ export const dysgraphiaPrompts: Record<string, DysgraphiaPrompt[]> = {
     { type: "word", prompt: "Write the sentence: 'The water cycle involves evaporation and condensation.'", reference: "The water cycle involves evaporation and condensation.", difficulty: 3, gradeLevel: "7-8", dsm5Domain: "spelling" },
     { type: "word", prompt: "Write this sentence from dictation: 'Archaeological evidence suggests ancient civilizations were advanced.'", reference: "Archaeological evidence suggests ancient civilizations were advanced.", difficulty: 3, gradeLevel: "7-8", dsm5Domain: "spelling" },
     // Grade 9-10: Complex writing tasks
-    { type: "word", prompt: "Write: 'The juxtaposition of electromagnetic phenomena with quantum mechanics reveals fundamental paradoxes.'", reference: "The juxtaposition of electromagnetic phenomena with quantum mechanics reveals fundamental paradoxes.", difficulty: 3, gradeLevel: "9-10", dsm5Domain: "spelling" },
-    { type: "word", prompt: "Write: 'Photosynthesis converts carbon dioxide into glucose through chlorophyll-mediated reactions.'", reference: "Photosynthesis converts carbon dioxide into glucose through chlorophyll-mediated reactions.", difficulty: 3, gradeLevel: "9-10", dsm5Domain: "spelling" },
-    { type: "word", prompt: "Write this complex sentence: 'Constitutional amendments require a two-thirds majority in Parliament.'", reference: "Constitutional amendments require a two-thirds majority in Parliament.", difficulty: 3, gradeLevel: "9-10", dsm5Domain: "spelling" },
+    // Grade 9-10: Writing tasks (balanced difficulty)
+    { type: "word", prompt: "Write: 'Education helps us build a better future.'", reference: "Education helps us build a better future.", difficulty: 3, gradeLevel: "9-10", dsm5Domain: "spelling" },
+    
+    { type: "word", prompt: "Write: 'Technology has changed the way we communicate.'", reference: "Technology has changed the way we communicate.", difficulty: 3, gradeLevel: "9-10", dsm5Domain: "spelling" },
+    
+    { type: "word", prompt: "Write: 'The environment must be protected for future generations.'", reference: "The environment must be protected for future generations.", difficulty: 3, gradeLevel: "9-10", dsm5Domain: "spelling" },
+    
+    { type: "word", prompt: "Write: 'Hard work and discipline lead to success.'", reference: "Hard work and discipline lead to success.", difficulty: 3, gradeLevel: "9-10", dsm5Domain: "spelling" },
+    
+    { type: "word", prompt: "Write: 'Science and innovation are important for national development.'", reference: "Science and innovation are important for national development.", difficulty: 3, gradeLevel: "9-10", dsm5Domain: "spelling" }
+
     // Visual-motor shapes
     { type: "shape", prompt: "Draw a circle", reference: "○", difficulty: 1, gradeLevel: "1-2", dsm5Domain: "visual-motor" },
     { type: "shape", prompt: "Draw a triangle", reference: "△", difficulty: 1, gradeLevel: "1-2", dsm5Domain: "visual-motor" },
