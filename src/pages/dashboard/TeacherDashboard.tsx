@@ -227,7 +227,7 @@ export default function TeacherDashboard() {
   // If a test is in progress, show the test component
   if (selectedTest && selectedStudent) {
     return (
-      <Layout hideFooter>
+      <Layout hideFooter hideHeader={true}>
         <div className="min-h-screen bg-muted/20 py-8">
           <div className="container mx-auto px-4">
             <Button 
@@ -278,7 +278,7 @@ export default function TeacherDashboard() {
   }
 
   return (
-    <Layout hideFooter>
+    <Layout hideFooter hideHeader={true}>
       <div className="min-h-screen bg-muted/20">
         <div className="container mx-auto px-4 py-8">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-8">
@@ -341,7 +341,7 @@ export default function TeacherDashboard() {
                   </div>
                   <div>
                     <p className="text-2xl font-bold">{students.length}</p>
-                    <p className="text-xs text-muted-foreground">Children in Classroom</p>
+                    <p className="text-xs text-muted-foreground">Trees in Forest</p>
                   </div>
                 </div>
               </CardContent>
@@ -708,9 +708,9 @@ export default function TeacherDashboard() {
                   </CardContent>
                 </Card>
 
-                <Card className="border-2 border-info/50 bg-info/5">
+                <Card className="border-2 border-info/30">
                   <CardContent className="pt-8 pb-8">
-                    <div className="h-16 w-16 rounded-2xl bg-info/20 flex items-center justify-center mx-auto mb-4">
+                    <div className="h-16 w-16 rounded-2xl gradient-cool flex items-center justify-center mx-auto mb-4">
                       <Brain className="h-8 w-8 text-info-foreground" />
                     </div>
                     <h3 className="text-xl font-semibold text-center mb-2">Perception Test</h3>
@@ -719,7 +719,7 @@ export default function TeacherDashboard() {
                     </p>
                     <Dialog>
                       <DialogTrigger asChild>
-                        <Button className="w-full bg-[#0ea5e9] hover:bg-[#0284c7] text-white shadow-md">
+                        <Button className="w-full bg-info hover:bg-info/90">{t.startTest}</Button>
                       </DialogTrigger>
                       <DialogContent>
                         <DialogHeader>
